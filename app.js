@@ -45,7 +45,7 @@ const STORE = {
         'The Happiest Sound in All the World'
       ]
       correctAnswer: 'King Kong ain’t got nothin’ on me!'
-    }
+    },
     {
       question: 'What was the name of the computer in 2001: A Space Odyssey',
       answers: [
