@@ -1,28 +1,60 @@
+/* eslint-disable strict */
 /**
  * Example store structure
  */
-const store = {
+const STORE = {
   // 5 or more questions are required
   questions: [
     {
-      question: 'What color is broccoli?',
+      question: 'Who directed the Titanic?',
       answers: [
-        'red',
-        'orange',
-        'pink',
-        'green'
+        'James Cameron',
+        'Steven Spielberg',
+        'Stanley Kubrick',
+        'Michael Bay'
       ],
-      correctAnswer: 'green'
+      correctAnswer: 'James Cameron'
     },
     {
-      question: 'What is the current year?',
+      question: 'Who plays Obediah Stane in Iron Man',
       answers: [
-        '1970',
-        '2015',
-        '2019',
-        '2005'
+        'Jeff Bridges',
+        'Jeff Goldblum',
+        'Jeff Daniels',
+        'Robert Downey Jr.'
       ],
-      correctAnswer: '2019'
+      correctAnswer: 'Jeff Bridges'
+    },
+    {
+      question: 'Which NBA player is NOT in Space Jam',
+      answer: [
+        'Scotty Pippen',
+        'Charles Pippen',
+        'Muggsy Bogues',
+        'Michael Jordan'
+      ],
+      correctAnswer: 'Scotty Pippen'
+    },
+    {
+      question: 'What was the tagline for Training Day',
+      answers: [
+        'King Kong ain’t got nothin’ on me!',
+        'Life is in their hands -- Death is on their minds.',
+        'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
+        'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
+        'The Happiest Sound in All the World'
+      ]
+      correctAnswer: 'King Kong ain’t got nothin’ on me!'
+    }
+    {
+      question: 'What was the name of the computer in 2001: A Space Odyssey',
+      answers: [
+        'Hal 9000',
+        'Hal 8000',
+        'Hal 6000',
+        'Commodore 64'
+      ],
+      correctAnswer: 'Hal 9000'
     }
   ],
   quizStarted: false,
@@ -48,6 +80,8 @@ const store = {
 /********** TEMPLATE GENERATION FUNCTIONS **********/
 
 // These functions return HTML templates
+
+// 
 
 /********** RENDER FUNCTION(S) **********/
 
