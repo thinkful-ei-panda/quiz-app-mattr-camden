@@ -43,7 +43,7 @@ const STORE = {
         'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
         'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
         'The Happiest Sound in All the World'
-      ]
+      ],
       correctAnswer: 'King Kong ain’t got nothin’ on me!'
     },
     {
