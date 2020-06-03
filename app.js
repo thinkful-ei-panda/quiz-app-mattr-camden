@@ -81,11 +81,59 @@ const STORE = {
 
 // These functions return HTML templates
 
-// 
+//a function that returns the question template
+function questionTemplate() {
+  console.log('questionTemplate ran succesfully!');
+}
+
+//a function that returns the individual answer templates
+function answerTemplate() {
+  console.log('answerTemplate ran succesfully!');
+}
+
+//a function that creates the answers form 
+function answersFormTemplate() {
+  console.log('$answersFormTemplate ran successfully!');
+}
+
+//a function display how far through the list of questions the user is (x out of 5 questions)
+function progressTemplate() {
+  console.log('progressTemplate ran successfully!');
+}
+
+//a function to return the final results template
+function finalResultsTemplate() {
+  console.log('finalResultsTemplate ran succesfully!');
+}
 
 /********** RENDER FUNCTION(S) **********/
 
 // This function conditionally replaces the contents of the <main> tag based on the state of the store
+
+// a function that renders the welcome screen
+function renderWelcomeScreen() {
+  console.log('renderWelcomeScreen ran succesfully!');
+}
+
+// a function that renders the question screens
+function renderQuestionScreens() {
+  console.log('renderQuestions ran succesfully!');
+}
+
+// a function that renders the correct answer screen
+function renderCorrectScreen() {
+  console.log('rendomerCorrectScreen ran succesfully!');
+}
+
+//a function that renders the wrong answer screen
+function renderWrongScreen() {
+  console.log('renderWrongScreen ran successfully!');
+}
+
+// a function that renders the final results screen
+function renderFinalScreen() {
+  console.log('renderFinalScreen ran succesfully!');
+}
 
 /********** EVENT HANDLER FUNCTIONS **********/
 
