@@ -34,6 +34,10 @@ h1 {
 
 }
 
+h2 {
+  color: white;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -62,24 +66,26 @@ section{
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  background-color: aliceblue;
+  background:  linear-gradient(
+    #00829973,
+    #0600538f
+    ), url(img/swirl.gif);
+  background-size: cover; 
+  padding: 20px;
 }
 
 form {
   color: white;
-  background:  linear-gradient(
-    #008299dc,
-    #060053f8
-    ), url(img/swirl.gif);
-  background-size: cover; 
+  
   border-radius: 15px;
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 10px;
-  width: 100%;
+  width: 300px;
+  height: 50px;
 }
 
 .input-selction{
@@ -90,7 +96,12 @@ form {
 p{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2em;
+  color: white;
   
+}
+
+.input-selection {
+  margin: 10px;
 }
 
 
@@ -115,7 +126,7 @@ p{
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 0 2px 5px -4px white;
-  font-size: 1.5em;
+  font-size: 1em;
   animation: glowing 20s linear infinite;
   flex: 2;
 }
@@ -174,7 +185,7 @@ p{
 }
 
 img {
-  width: 85%;
+  width: 100%;
   height: 85%;
 }
 
@@ -204,13 +215,9 @@ form{
 }
 
 .glow-on-hover{
-  width: 80%;
-  height: 100%;
-  padding: 5px;
-}
-
-#start {
   width: 300px;
+  height: 80px;
+  padding: 5px;
 }
 
 }
