@@ -88,19 +88,19 @@ function renderQuestionScreens() {
        
        <form>
          <div class= "input-selection">
-           <input type="radio" id="answer" name="gender" value="answer">
+           <input type="radio" id="answer" name="answer-name" value="answer">
            <label for="answers">Answer1</label>
            </div>
          <div class= "input-selection">
-           <input type="radio" id="answer" name="gender" value="answer">
+           <input type="radio" id="answer" name="answer-name" value="answer">
            <label for="answers">Answer2 </label>
            </div>
          <div class= "input-selection">
-           <input type="radio" id="answer" name="gender" value="answer">
+           <input type="radio" id="answer" name="answer-name" value="answer">
            <label for="answers">Answer3 </label>
            </div>
          <div class= "input-selection">
-           <input type="radio" id="answer" name="gender" value="answer">
+           <input type="radio" id="answer" name="answer-name" value="answer">
            <label for="answers">Answer4 </label>
            </div>
            <button type="submit" class= "glow-on-hover" id="submitbtn">Submit</button>   
