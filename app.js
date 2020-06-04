@@ -43,9 +43,9 @@ const STORE = {
         'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
         'On every street in every city in this country, there is a nobody who dreams of being a somebody.',
         'The Happiest Sound in All the World'
-      ]
+      ],
       correctAnswer: 'King Kong ain’t got nothin’ on me!'
-    }
+    },
     {
       question: 'What was the name of the computer in 2001: A Space Odyssey',
       answers: [
@@ -81,12 +81,121 @@ const STORE = {
 
 // These functions return HTML templates
 
-// 
+//a function that returns the question template
+function questionTemplate() {
+  console.log('questionTemplate ran succesfully!');
+}
+
+//a function that returns the individual answer templates
+function answerTemplate() {
+  console.log('answerTemplate ran succesfully!');
+}
+
+//a function that creates the answers form 
+function answersFormTemplate() {
+  console.log('answersFormTemplate ran successfully!');
+}
+
+//a function display how far through the list of questions the user is (x out of 5 questions)
+function progressTemplate() {
+  console.log('progressTemplate ran successfully!');
+}
+
+//a function to return the final results template
+function finalResultsTemplate() {
+  console.log('finalResultsTemplate ran succesfully!');
+}
 
 /********** RENDER FUNCTION(S) **********/
 
 // This function conditionally replaces the contents of the <main> tag based on the state of the store
 
-/********** EVENT HANDLER FUNCTIONS **********/
+// a function that renders the welcome screen
+function renderWelcomeScreen() {
+  console.log('renderWelcomeScreen ran succesfully!');
+  $('main').append(`<main>
+    <section>
+          <button type="submit" class= "glow-on-hover" id="start">Start</button>
+    </section>
+  </main>`);
+}
 
+// a function that renders the question screens
+function renderQuestionScreens() {
+  console.log('renderQuestions ran succesfully!');
+  $('main').append(`<main>
+    <section>
+      <div class= "image-box">
+        <img src="img/titanic.jpg" alt="ALT" width="WIDTH" height="HIEGHT">
+        </div>
+      <div class= "question-box">  
+        <h2>Question X of 5</h2>
+        <P>This is a question?</P>
+        
+        <form>
+          <div class= "input-selection">
+            <input type="radio" id="answer" name="gender" value="answer">
+            <label for="answers">${STORE.answer} </label>
+            </div>
+          <div class= "input-selection">
+            <input type="radio" id="answer" name="gender" value="answer">
+            <label for="answers">Answer2 </label>
+            </div>
+          <div class= "input-selection">
+            <input type="radio" id="answer" name="gender" value="answer">
+            <label for="answers">Answer3 </label>
+            </div>
+          <div class= "input-selection">
+            <input type="radio" id="answer" name="gender" value="answer">
+            <label for="answers">Answer4 </label>
+            </div>
+            <button type="submit" class= "glow-on-hover" id="submitbtn">Submit</button>   
+        </form>
+      </div>
+    </section>
+  </main>`);
+}
+
+// a function that renders the correct answer screen
+function renderCorrectScreen() {
+  console.log('rendomerCorrectScreen ran succesfully!');
+}
+
+//a function that renders the wrong answer screen
+function renderWrongScreen() {
+  console.log('renderWrongScreen ran successfully!');
+}
+
+// a function that renders the final results screen
+function renderFinalScreen() {
+  console.log('renderFinalScreen ran succesfully!');
+}
+
+/********** EVENT HANDLER FUNCTIONS **********/
+//Start Quiz button handler should call questions page render
+function handlerStart(){
+
+$("main").find(":button").on(event => {
+    event.preventDefault();
+console.log(`this handler is recieving`)
+  //  return renderQuestionScreens();
+});
+}
 // These functions handle events (submit, click, etc)
+
+// $(questionTemplate);
+// $(answerTemplate)
+// $(answersFormTemplate);
+// $(progressTemplate);
+// $(finalResultsTemplate);
+$(renderWelcomeScreen);
+// $(renderQuestionScreens);
+// $(renderCorrectScreen);
+// $(renderWrongScreen);
+// $(renderFinalScreen);
+// console.log(STORE["questions"].answers);
+$(handlerStart);
+
+
+
+
