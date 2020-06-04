@@ -175,13 +175,14 @@ function renderFinalScreen() {
 //Start Quiz button handler should call questions page render
 function handlerStart(){
 
-$("main").find(":button").on(event => {
+$("#start").submit(event => {
     event.preventDefault();
 console.log(`this handler is recieving`)
   //  return renderQuestionScreens();
 });
 }
 // These functions handle events (submit, click, etc)
+$(handlerStart);
 
 // $(questionTemplate);
 // $(answerTemplate)
@@ -194,7 +195,7 @@ $(renderWelcomeScreen);
 // $(renderWrongScreen);
 // $(renderFinalScreen);
 // console.log(STORE["questions"].answers);
-$(handlerStart);
+
 
 
 
